@@ -60,33 +60,12 @@
   .nav-links a{text-decoration:none; color:var(--muted); font-size:0.92rem;}
   .nav-links a:hover{color:var(--text);}
   .nav-cta{display:inline-flex;}
- /* Desktop */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
 
-.nav-cta {
-    display: inline-flex;
-}
-
-/* Mobile */
-@media (max-width: 719px) {
-    .nav-links {
-        display: none;
-    }
-
-    .nav-cta {
-        display: inline-flex;
-        padding: 10px 18px;
-        font-size: 0.9rem;
-    }
-
-    nav {
-        padding: 14px 20px;
-    }
-}
+  @media (max-width: 719px) {
+    .nav-links{display:none;}
+    .nav-cta{display:inline-flex; padding:10px 18px; font-size:0.9rem;}
+    nav{padding:14px 20px;}
+  }
   .btn{
     display:inline-flex; align-items:center; gap:8px;
     padding:12px 22px; border-radius:999px; font-weight:600; font-size:0.92rem;
@@ -230,7 +209,7 @@
 
 <header>
   <nav>
-    <div class="logo"><em>EV</em><span> </span>InstallConnect</div>
+   <a href="index.html" class="logo"><em>EV</em><span> </span>InstallConnect</a>
     <ul class="nav-links">
       <li><a href="#why">Why Us</a></li>
       <li><a href="#savings">Savings</a></li>
